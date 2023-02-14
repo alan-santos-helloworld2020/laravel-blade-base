@@ -54,13 +54,13 @@ body {
 
                 li {
                     a {
-                        color: orange;
+                        color: rgb(165, 88, 0);
                         text-decoration: none;
                         margin-left: 8px;
                     }
 
                     a:hover {
-                        color: rgb(255, 51, 0);
+                        color: orange;
                     }
                 }
             }
@@ -70,5 +70,50 @@ body {
     p {
         color: orange;
         text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 70%;
+        margin-left: 15%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+
+        thead {
+            background-color: black;
+            color: white;
+
+            tr {
+                th:first-child{
+                    width: 10%;
+                    padding: 10px;
+                    background-color: darkgreen;
+                    color: rgb(255, 255, 255);
+                    border-left: 5px solid darkgreen;
+                }
+
+                th {
+                    width: 22.5%;
+                    padding: 10px;
+                }
+            }
+
+        }
+
+        tbody {
+            tr {
+
+                td {
+                    padding: 10px;
+                    width: 12.5%;
+                }
+            }
+
+            tr:hover {
+                background-color: rgb(211, 211, 211);
+                border-left: 5px solid darkgreen;
+            }
+        }
+
     }
 }
